@@ -225,6 +225,10 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+    .about {
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
     .about__flex {
         flex-direction: column;
         align-items: center;
@@ -232,5 +236,8 @@ body {
     .about__flex-item {
         margin-right: 0;
         margin-bottom: 30px;
+    }
+    .about__flex-item:last-child {
+        margin-bottom: 0;
     }
 }
