@@ -47,6 +47,7 @@ body {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 21px;
+    letter-spacing: 0.02em;
 }
 .text-p {
     font-family: "Oswald", sans-serif;
@@ -76,7 +77,7 @@ body {
     margin-bottom: 112px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .logo {
     width: 60px;
@@ -103,6 +104,12 @@ body {
 }
 .burger__line:last-child {
     margin-bottom: 0;
+}
+@media screen and (max-width: 380px) {
+    .h1 {
+        font-size: 46px;
+        line-height: 64px;
+    }
 }
 .h1 {
     font-weight: 500;
@@ -296,5 +303,81 @@ body {
 @media screen and (max-width: 768px) {
     .request__flex {
         flex-wrap: wrap;
+    }
+}
+.services {
+    padding: 150px 0;
+}
+.section__h2, .services__h4 {
+    color: #000000;
+    text-align: center;
+}
+.section__h2 {
+    margin-bottom: 55px;
+
+}
+.services__h4 {
+    margin: 0 auto;
+    max-width: 100%;
+    text-transform: uppercase;
+}
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+.services__grid-item {
+    padding: 59px 0;
+    background-color: #F7F7F7;
+    width: 350px;
+
+}
+.services__icon {
+    margin: 0 auto 21px;
+}
+@media screen and (max-width: 1280px) {
+    .services {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .services__grid-item {
+        width: 100%;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .services__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.portfolio {
+
+}
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0;
+}
+.portfolio__grid-item {
+
+}
+.portfolio__img {
+
+}
+@media screen and (max-width: 1280px) {
+    .portfolio__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .portfolio__grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
