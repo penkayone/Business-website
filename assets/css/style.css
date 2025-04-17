@@ -183,6 +183,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+    .header__title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media screen and (max-width: 768px) {
     .info {
@@ -411,26 +415,6 @@ body {
     color: var(--gray-color);
     max-width: 730px;
 }
-.question_h3.close {
-    margin-bottom: 31px;
-}
-.question_h3.open::before,
-.question_h3.close::before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url(../images/arrow-icon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 14px;
-}
-.question_h3.open::before {
-    transform: rotate(-90deg);
-}
-.question_h3.close + .question-p {
-    display: none;
-}
 @media screen and (max-width: 1280px) {
     .question {
         padding: 150px 15px 110px;
@@ -507,5 +491,81 @@ body {
 @media screen and (max-width: 768px) {
     .reviews__grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+.contacts {
+    padding: 100px 0 150px;
+}
+.contacts__h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacts__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.contacts__item {
+    max-width: 255px;
+    text-align: center;
+}
+.contacts__icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+.contacts__h3 {
+    text-transform: uppercase;
+}
+.contacts__h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+.contacts__h3-gray {
+    color: var(--gray-color);
+    margin-bottom: 18px;
+}
+.contacts__h3-accent {
+    color: var(--accent-color);
+}
+@media screen and (max-width: 1280px) {
+    .contacts__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contacts__item {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contacts__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacts__item {
+        max-width: 100%;
+    }
+}
+.footer {
+    padding: 30px 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copyright {
+
+}
+.footer__brand {
+
+}
+@media screen and (max-width: 1280px) {
+    .footer {
+        padding: 30px 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer__footer {
+        flex-direction: column;
     }
 }
